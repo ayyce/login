@@ -1,8 +1,7 @@
 import './AuthForm.css';
 import { Icon } from '@iconify/react';
 
-function AuthForm(props = { isLogin: true }) {
-  const { isLogin } = props;
+function AuthForm({ isLogin }) {
   return (
     <form action="#" className="Auth-form">
       <h2 className="Auth-title">{isLogin ? 'Login' : 'Sign Up'}</h2>
